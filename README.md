@@ -2,7 +2,7 @@
 
 ## A small Framework for networking in unity
 
-![logo](https://i.imgur.com/IsUevIj.png)
+![logo](https://i.imgur.com/0PncxCR.png)
 
 ## About
 
