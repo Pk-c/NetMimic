@@ -13,8 +13,8 @@
 
   -The demo project provide a simple exemple on how to use the library
 
-  [<video src='https://i.imgur.com/ZEu3cIk.mp4' width=180/></video>](https://github.com/Pk-c/NetMimic/assets/8162241/a3301ffa-72f1-4dd8-bd3d-7d6a473940ab)https://github.com/Pk-c/NetMimic/assets/8162241/a3301ffa-72f1-4dd8-bd3d-7d6a473940ab
-
+  <video src='https://github-production-user-asset-6210df.s3.amazonaws.com/8162241/280515495-a3301ffa-72f1-4dd8-bd3d-7d6a473940ab.mp4' width=180/></video>
+  
   Exemple game contains some tool to help with network games :
 
   -Networkable attributes system to help transmit data
