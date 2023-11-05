@@ -17,11 +17,15 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: c888f36ac5d7d66499724a2e77a7297c
   m_SerializeEntries:
-  - m_GUID: 046d9b0131fa07840bb08dd4a0e7a661
-    m_Address: Player
+  - m_GUID: e4946e07ff0f4334b9c02f91ac8c25ca
+    m_Address: UnityChanPlayer
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd47a7729b4d2234f9cbfa9c127f9707
+    m_Address: Marie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ea70aa43e4df9704a9656cdf8b920cb8, type: 2}

@@ -7,43 +7,63 @@ namespace Game
 {
     public class GameMain : MonoBehaviour
     {
-        public NetworkManager.NetTransport m_Transport = NetworkManager.NetTransport.UnityNetCode;
+        public NetworkManager.NetTransport Transport = NetworkManager.NetTransport.UnityNetCode;
 
-        public static List<Network> m_Network = new List<Network>();
-
-        public static void Register(Network network)
+        private static List<Network> Network = new List<Network>();
+        private static Dictionary<int, Attributes> Attributes = new Dictionary<int, Attributes>();
+        private static Dictionary<int, NetEntity> NetEntities = new Dictionary<int, NetEntity>();
+        
+        public static void RegisterNet(Network network)
         {
-            m_Network.Add(network);
+            Network.Add(network);
+        }
+
+        public static void RegisterAttributes(Attributes attributes)
+        {
+            Attributes[attributes.gameObject.GetInstanceID()] = attributes;
+        }
+
+        public static void RegisterNetEntity(NetEntity netEntity)
+        {
+            NetEntities[netEntity.gameObject.GetInstanceID()] = netEntity;
         }
 
         public static Network GetNet(Scene scene)
         {
-            for (int i = 0; i < m_Network.Count; i++)
+            for (int i = 0; i < Network.Count; i++)
             {
-                if (m_Network[i].gameObject.scene == scene)
+                if (Network[i].gameObject.scene == scene)
                 {
-                    return m_Network[i];
+                    return Network[i];
                 }
             }
 
             return null;
         }
+        public static Attributes GetAttributes(GameObject go)
+        {
+            return Attributes.ContainsKey(go.GetInstanceID()) ? Attributes[go.GetInstanceID()] : null;
+        }
+        public static NetEntity GetNetEntity(GameObject go)
+        {
+            return NetEntities.ContainsKey(go.GetInstanceID()) ? NetEntities[go.GetInstanceID()] : null;
+        }
 
         public void StartServer()
         {
-            Network.Mode = Network.NetworkMode.Host;
+            Game.Network.Mode = Game.Network.NetworkMode.Host;
             SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
         }
 
         public void StartClient()
         {
-            Network.Mode = Network.NetworkMode.Client;
+            Game.Network.Mode = Game.Network.NetworkMode.Client;
             SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
         }
 
         public void StartFakeNet()
         {
-            Network.Mode = Network.NetworkMode.FakeNet;
+            Game.Network.Mode = Game.Network.NetworkMode.FakeNet;
             SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
         }
     }

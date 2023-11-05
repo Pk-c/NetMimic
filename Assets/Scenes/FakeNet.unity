@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f833a04caf6891e49ac76c0493758e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DebugOffset: {x: 0, y: 1, z: 0}
-  m_PacketFrequency: 0.15
+  DebugOffset: {x: 5, y: 0, z: 0}
+  PacketFrequency: 0.05
 --- !u!4 &445219465
 Transform:
   m_ObjectHideFlags: 0

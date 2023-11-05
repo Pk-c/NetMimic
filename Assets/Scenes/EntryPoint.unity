@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5c1d0d2bc531541a0aa0ae7724b5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Transport: 0
+  Transport: 0
 --- !u!4 &460729407
 Transform:
   m_ObjectHideFlags: 0
@@ -177,6 +177,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 460729407}
     m_Modifications:
+    - target: {fileID: 610719195083770066, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 950407134999457416, guid: fc542361cd225554eb40fafb8f690239,
         type: 3}
       propertyPath: m_Name
@@ -187,6 +192,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 460729406}
+    - target: {fileID: 3843258010083744491, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843258010083744491, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.1509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843258010083744491, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.1509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843258010083744491, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.1509434
+      objectReference: {fileID: 0}
     - target: {fileID: 4633856122542469105, guid: fc542361cd225554eb40fafb8f690239,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -197,6 +222,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 460729406}
+    - target: {fileID: 8713154266353216237, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 985.478
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713154266353216237, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1078.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713154266353216237, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713154266353216237, guid: fc542361cd225554eb40fafb8f690239,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 9121006617080826858, guid: fc542361cd225554eb40fafb8f690239,
         type: 3}
       propertyPath: m_LocalPosition.x
