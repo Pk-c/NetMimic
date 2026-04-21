@@ -2,8 +2,7 @@
 
 ## A small Framework for networking in unity
 
-![logo](https://i.imgur.com/0PncxCR.png)
-
+<img width="259" height="224" alt="sticker (8)" src="https://github.com/user-attachments/assets/22f1cb57-8e3b-424a-aa2c-9f9df0d5d482" />
 
 ## About
 
